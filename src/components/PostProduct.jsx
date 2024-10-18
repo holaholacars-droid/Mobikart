@@ -59,11 +59,7 @@ const PostJob = () => {
 
   useEffect(() => {
     if (dataCreateJob?.length > 0) {
-      const timer = setTimeout(() => {
-        navigate("/marketplace"); // Navigate to marketplace after 2 seconds // Reset the form fields
-        setLoading(false); // Reset loading state
-      }, 2000);
-      return () => clearTimeout(timer); // Cleanup timeout
+      navigate("/marketplace"); // Navigate to marketplace after 2 seconds // Reset the form fields// Reset loading state // Cleanup timeout
     }
   }, [dataCreateJob, navigate]);
 
