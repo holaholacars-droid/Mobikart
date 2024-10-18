@@ -58,12 +58,14 @@ const PostJob = () => {
   };
 
   useEffect(() => {
-    if (dataCreateJob?.length > 0){
-      setTimeout(() => {
-        window.location.reload(); // Refresh the page after 2 seconds
+    if (dataCreateJob?.length > 0) {
+      const timer = setTimeout(() => {
+        navigate("/marketplace"); // Navigate to marketplace after 2 seconds // Reset the form fields
+        setLoading(false); // Reset loading state
       }, 2000);
+      return () => clearTimeout(timer); // Cleanup timeout
     }
-  }, [loadingCreateJob]);
+  }, [dataCreateJob, navigate]);
 
   const {
     loading: loadingCompanies,
