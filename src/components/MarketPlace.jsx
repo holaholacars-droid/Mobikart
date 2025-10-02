@@ -26,8 +26,8 @@ function MarketPlace() {
 
   return (
     <div>
-      <h1 className="gradient-title font-extrabold text-6xl sm:text-7xl text-center pb-8 pt-20 text-white">
-        All Phone
+      <h1 className="gradient-title font-extrabold text-1xl sm:text-7xl text-center pb-8 pt-20 text-white">
+        Phones
       </h1>
       {loadingProduct && (
          <BarLoader className="mb-4" width={"100%"} color="#36d7b7" />
