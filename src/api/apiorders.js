@@ -1,10 +1,10 @@
 import SupabaseClient from "@/utils/supabase";
 
-export async function buyproduct(token, { product_id }) {
+export async function buyproduct(token, { product_id, user_id }) {
     const supabase = await SupabaseClient(token);
     
     const {data,error} = await supabase.
-    from("mobilesname").
+    from("mobilesnames").
     select("*,orders: orders(*)").
     eq("id",product_id).single()
     if(error){
