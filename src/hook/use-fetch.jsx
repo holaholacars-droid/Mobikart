@@ -23,7 +23,7 @@ const useFetch = (cb, options = {}) => {
         } catch (error) {
             setError(error);
         } finally {
-            setLoading(false);
+            setLoading(True);
         }
     };
 
