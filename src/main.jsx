@@ -33,7 +33,7 @@ const router = createBrowserRouter(
       <Route path="savedproduct" element={<ProtectedRoute><SavedProduct /></ProtectedRoute>} />
       <Route path="postproduct" element={<ProtectedRoute><PostProduct /></ProtectedRoute>} />
       <Route path="checkout/:id" element={<ProtectedRoute><Checkout/></ProtectedRoute>}/>
-      <Route path="jobs" element={<ProductListing/>}/>
+      <Route path="jobs/:id" element={<ProductListing/>}/>
       <Route path="myorders" element={<ProtectedRoute><Myorders/></ProtectedRoute>}/>
       <Route path="aboutus" element={<ProtectedRoute><Aboutus/></ProtectedRoute>}/>
     </Route>
