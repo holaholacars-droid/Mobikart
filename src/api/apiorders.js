@@ -6,7 +6,7 @@ export async function buyproduct(token, { product_id }) {
     const {data,error} = await supabase.
     from("mobilesname").
     select("*,orders: orders(*)").
-    eq("id",product_id).single()
+    eq("Name",product_id).single()
     if(error){
         console.log(error);
         return null;
