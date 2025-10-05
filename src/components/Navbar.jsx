@@ -6,8 +6,7 @@ import { SignedIn } from "@clerk/clerk-react";
 import { SignInButton } from "@clerk/clerk-react";
 import { UserButton } from "@clerk/clerk-react";
 import { Button } from "./ui/button";
-import { BriefcaseBusiness, PenBox } from "lucide-react";
-import { useUser } from "@clerk/clerk-react";
+
 
 function Navbar() {
   const [showsignin, setshowsignin] = useState(false);
