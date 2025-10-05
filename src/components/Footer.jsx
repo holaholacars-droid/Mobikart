@@ -13,9 +13,6 @@ function Footer() {
                 <li>
                   <a href="">STORE</a>
                 </li>
-                <li>
-                  <a href="">WARRENTY</a>
-                </li>
                 <li className="bg-gradient-to-r from-sky-800 to-sky-500 bg-clip-text text-transparent">
                   <a href="">SPECIAL SERIES PHONES</a>
                 </li>
