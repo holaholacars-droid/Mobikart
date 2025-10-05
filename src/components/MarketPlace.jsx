@@ -11,7 +11,7 @@ function MarketPlace() {
   const {
     fn: fnProduct,
     data: mobilesname,
-    loading: loadingProduct,
+    loading: loadingProduct
   } = useFetch(getproduct, {});
 
   console.log(mobilesname);
