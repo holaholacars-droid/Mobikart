@@ -8,12 +8,6 @@ import Productcard from "./Productcard";
 function MarketPlace() {
   const { isLoaded } = useUser();
 
-  const {
-    fn: fnProduct,
-    data: mobilesname,
-    loading: loadingProduct
-  } = useFetch(getproduct, {});
-
   console.log(mobilesname);
 
   useEffect(() => {
