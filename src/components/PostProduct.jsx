@@ -25,6 +25,7 @@ const schema = z.object({
 const PostJob = () => {
   const { user, isLoaded } = useUser();
   const navigate = useNavigate();
+  const { product } = useUser();
 
   const {
     register,
